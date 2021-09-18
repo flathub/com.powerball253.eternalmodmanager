@@ -37,8 +37,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/PowerBall253/EternalModManager.git
-        tag: v1.6.1
-        commit: 5d23332b392123cbf33c6aa8aed677905ab2e38a
+        tag: v1.6.2
+        commit: 07465e342e984f4ed07028b9c87b94c0be2d626e
         dest: main
       - generated-sources.json
       - type: script
