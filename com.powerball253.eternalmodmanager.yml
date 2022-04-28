@@ -11,7 +11,7 @@ separate-locales: false
 finish-args:
   # X11 stuff
   - --share=ipc
-  - --socket=fallback-x11
+  - --socket=x11
   # Needs access to regular Steam library paths
   - --filesystem=home
   - --filesystem=/media
