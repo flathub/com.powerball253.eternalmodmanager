@@ -2,10 +2,8 @@ app-id: com.powerball253.eternalmodmanager
 runtime: org.freedesktop.Platform
 runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
-base: org.electronjs.Electron2.BaseApp
-base-version: '21.08'
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node18
+  - org.freedesktop.Sdk.Extension.dotnet6
 command: run.sh
 separate-locales: false
 finish-args:
@@ -19,38 +17,32 @@ finish-args:
   - --filesystem=/run/media
   # Networking to download the modding tools if needed
   - --share=network
+  # Session bus to open console
+  - --socket=session-bus
 build-options:
-  append-path: /usr/lib/sdk/node18/bin
+  append-path: /usr/lib/sdk/dotnet6/bin
+  append-ld-library-path: /usr/lib/sdk/dotnet6/lib
   env:
-    NPM_CONFIG_LOGLEVEL: info
+    PKG_CONFIG_PATH: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet6/lib/pkgconfig
 modules:
   - name: eternalmodmanager
     buildsystem: simple
-    build-options:
-      env:
-        XDG_CACHE_HOME: /run/build/eternalmodmanager/flatpak-node/cache
-        npm_config_cache: /run/build/eternalmodmanager/flatpak-node/npm-cache
-        npm_config_nodedir: /usr/lib/sdk/node18
-        npm_config_offline: 'true'
-    subdir: main
     sources:
       - type: git
-        url: https://github.com/PowerBall253/EternalModManager.git
-        tag: v1.8.0
-        commit: a35186408cab17ff37f50ef5d76da82b4964e471
-        dest: main
-      - generated-sources.json
+        url: https://github.com/PowerBall253/EternalModManager-Avalonia.git
+        tag: v2.0.0
+        commit: 5a0f52d942ea9a5ac1b1c5f3f376a6c32547a09c
+      - sources.json
       - type: script
         dest-filename: run.sh
         commands:
-          - zypak-wrapper.sh /app/main/eternalmodmanager "$@"
+          - /app/bin/dotnet /app/bin/EternalModManager.dll "$@"
     build-commands:
-      - npm install --offline
-      - |
-        . ../flatpak-node/electron-builder-arch-args.sh
-        npm run build -- $ELECTRON_BUILDER_ARCH_ARGS  --linux --dir
-      - cp -a dist/linux*unpacked /app/main
-      - install -Dm755 ../run.sh /app/bin/run.sh
+      - /usr/lib/sdk/dotnet6/bin/install.sh
+      - sed -i 's/0.10.999-cibuild0019259-beta/0.10.13/g' EternalModManager/EternalModManager.csproj
+      - /usr/lib/sdk/dotnet6/bin/dotnet publish --source ./nuget-sources -c Release
+      - cp -r --remove-destination /run/build/eternalmodmanager/EternalModManager/bin/Release/net6.0/publish/* /app/bin/
+      - install -Dm755 run.sh /app/bin/run.sh
       - install -Dm644 resources/eternalmodmanager.appdata.xml /app/share/metainfo/com.powerball253.eternalmodmanager.appdata.xml
       - install -Dm644 resources/eternalmodmanager.png /app/share/icons/hicolor/256x256/apps/com.powerball253.eternalmodmanager.png
       - |
