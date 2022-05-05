@@ -30,8 +30,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/PowerBall253/EternalModManager-Avalonia.git
-        tag: v2.0.1
-        commit: b7ecbd2c4b5897f4af68f6a154ef04d15e0e01c2
+        tag: v2.0.2
+        commit: b3a70352e92623d3a34c607b03cf8bc0fe6efb77
       - sources.json
       - type: script
         dest-filename: run.sh
