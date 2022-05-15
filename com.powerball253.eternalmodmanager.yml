@@ -30,8 +30,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/PowerBall253/EternalModManager-Avalonia.git
-        tag: v2.0.5
-        commit: 3e3c766a59bffd7588ec11a770ef8d4df98eaea9
+        tag: v2.0.6
+        commit: f57ee57eca1e86736e96a31d5643b9018e7cf950
       - sources.json
       - type: script
         dest-filename: run.sh
@@ -39,7 +39,6 @@ modules:
           - /app/bin/dotnet /app/bin/EternalModManager.dll "$@"
     build-commands:
       - /usr/lib/sdk/dotnet6/bin/install.sh
-      - sed -i 's/0.10.999-cibuild0019259-beta/0.10.13/g' EternalModManager/EternalModManager.csproj
       - /usr/lib/sdk/dotnet6/bin/dotnet publish --source ./nuget-sources -c Release
       - cp -r --remove-destination /run/build/eternalmodmanager/EternalModManager/bin/Release/net6.0/publish/* /app/bin/
       - install -Dm755 run.sh /app/bin/run.sh
