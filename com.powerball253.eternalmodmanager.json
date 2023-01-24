@@ -1,0 +1,60 @@
+{
+  "id" : "com.powerball253.eternalmodmanager",
+  "runtime" : "org.freedesktop.Platform",
+  "runtime-version" : "21.08",
+  "sdk" : "org.freedesktop.Sdk",
+  "build-options" : {
+    "env" : {
+      "PKG_CONFIG_PATH" : "/app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/sdk/dotnet6/lib/pkgconfig"
+    },
+    "append-path" : "/usr/lib/sdk/dotnet6/bin",
+    "append-ld-library-path" : "/usr/lib/sdk/dotnet6/lib"
+  },
+  "command" : "run.sh",
+  "modules" : [
+    {
+      "name" : "eternalmodmanager",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "url" : "https://github.com/PowerBall253/EternalModManager-Avalonia.git",
+          "tag" : "v2.1.2",
+          "commit" : "8916cea502a61159a961406dc9c0e690bb0fef56",
+          "type" : "git"
+        },
+        "sources.json",
+        {
+          "commands" : [
+            "/app/bin/dotnet /app/bin/EternalModManager.dll \"$@\""
+          ],
+          "dest-filename" : "run.sh",
+          "type" : "script"
+        }
+      ],
+      "build-commands" : [
+        "/usr/lib/sdk/dotnet6/bin/install.sh",
+        "/usr/lib/sdk/dotnet6/bin/dotnet publish --source ./nuget-sources -c Release",
+        "cp -r --remove-destination /run/build/eternalmodmanager/EternalModManager/bin/Release/net6.0/publish/* /app/bin/",
+        "install -Dm755 run.sh /app/bin/run.sh",
+        "install -Dm644 resources/eternalmodmanager.appdata.xml /app/share/metainfo/com.powerball253.eternalmodmanager.appdata.xml",
+        "install -Dm644 resources/eternalmodmanager.png /app/share/icons/hicolor/256x256/apps/com.powerball253.eternalmodmanager.png",
+        "sed -i 's/Icon=eternalmodmanager/Icon=com.powerball253.eternalmodmanager/g' resources/eternalmodmanager.desktop\nsed -i 's/Exec=eternalmodmanager/Exec=run.sh/g' resources/eternalmodmanager.desktop\ninstall -Dm644 resources/eternalmodmanager.desktop /app/share/applications/com.powerball253.eternalmodmanager.desktop\n",
+        "install -Dm644 LICENSE /app/share/licenses/com.powerball253.eternalmodmanager/LICENSE"
+      ]
+    }
+  ],
+  "separate-locales" : false,
+  "sdk-extensions" : [
+    "org.freedesktop.Sdk.Extension.dotnet6"
+  ],
+  "finish-args" : [
+    "--share=ipc",
+    "--socket=x11",
+    "--filesystem=home",
+    "--filesystem=/media",
+    "--filesystem=/mnt",
+    "--filesystem=/run/media",
+    "--share=network",
+    "--socket=session-bus"
+  ]
+}
