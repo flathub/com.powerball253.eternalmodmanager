@@ -28,8 +28,8 @@
         {
           "type" : "git",
           "url" : "https://github.com/PowerBall253/EternalModManager-Avalonia.git",
-          "tag" : "v3.0.0",
-          "commit" : "090c131d3dcfbc0a6622838e30b17c0d0b0e5f0e"
+          "tag" : "v3.0.1",
+          "commit" : "cd2ef5e428d43b08ead2cf70bdfac8771398fae1"
         },
         "sources.json",
         {
