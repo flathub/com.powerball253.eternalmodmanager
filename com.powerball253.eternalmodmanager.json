@@ -29,8 +29,8 @@
         {
           "type" : "git",
           "url" : "https://github.com/PowerBall253/EternalModManager.git",
-          "tag" : "v4.0.2",
-          "commit" : "ff109e17048f51a1da236d683d7aad58da099abd"
+          "tag" : "v4.0.3",
+          "commit" : "4336ba9250ac3763173b9c6f5a9d8638b89acd46"
         },
         "sources.json"
       ],
