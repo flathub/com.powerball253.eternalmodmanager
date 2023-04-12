@@ -860,14 +860,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/gtk4/gtk4-0.6.4.crate",
-        "sha256": "1e30e124b5a605f6f5513db13958bfcd51d746607b20bc7bb718b33e303274ed",
-        "dest": "cargo/vendor/gtk4-0.6.4"
+        "url": "https://static.crates.io/crates/gtk4/gtk4-0.6.6.crate",
+        "sha256": "b28a32a04cd75cef14a0983f8b0c669e0fe152a0a7725accdeb594e2c764c88b",
+        "dest": "cargo/vendor/gtk4-0.6.6"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"1e30e124b5a605f6f5513db13958bfcd51d746607b20bc7bb718b33e303274ed\", \"files\": {}}",
-        "dest": "cargo/vendor/gtk4-0.6.4",
+        "contents": "{\"package\": \"b28a32a04cd75cef14a0983f8b0c669e0fe152a0a7725accdeb594e2c764c88b\", \"files\": {}}",
+        "dest": "cargo/vendor/gtk4-0.6.6",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1237,27 +1237,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/libadwaita/libadwaita-0.3.1.crate",
-        "sha256": "b1c4efd2020a4fcedbad2c4a97de97bf6045e5dc49d61d5a5d0cfd753db60700",
-        "dest": "cargo/vendor/libadwaita-0.3.1"
+        "url": "https://static.crates.io/crates/libadwaita/libadwaita-0.4.1.crate",
+        "sha256": "e82776542b73ac5691b2bddf3e2aaf0157d34f35193fb522de2fc258006c1785",
+        "dest": "cargo/vendor/libadwaita-0.4.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"b1c4efd2020a4fcedbad2c4a97de97bf6045e5dc49d61d5a5d0cfd753db60700\", \"files\": {}}",
-        "dest": "cargo/vendor/libadwaita-0.3.1",
+        "contents": "{\"package\": \"e82776542b73ac5691b2bddf3e2aaf0157d34f35193fb522de2fc258006c1785\", \"files\": {}}",
+        "dest": "cargo/vendor/libadwaita-0.4.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/libadwaita-sys/libadwaita-sys-0.3.0.crate",
-        "sha256": "0727b85b4fe2b1bed5ac90df6343de15cbf8118bfb96d7c3cc1512681a4b34ac",
-        "dest": "cargo/vendor/libadwaita-sys-0.3.0"
+        "url": "https://static.crates.io/crates/libadwaita-sys/libadwaita-sys-0.4.1.crate",
+        "sha256": "91be74a61f26efa6946c02dad76eb4cd3021addb0ff85dde445c1cd41d2eca2d",
+        "dest": "cargo/vendor/libadwaita-sys-0.4.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"0727b85b4fe2b1bed5ac90df6343de15cbf8118bfb96d7c3cc1512681a4b34ac\", \"files\": {}}",
-        "dest": "cargo/vendor/libadwaita-sys-0.3.0",
+        "contents": "{\"package\": \"91be74a61f26efa6946c02dad76eb4cd3021addb0ff85dde445c1cd41d2eca2d\", \"files\": {}}",
+        "dest": "cargo/vendor/libadwaita-sys-0.4.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2329,19 +2329,6 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/toml/toml-0.5.11.crate",
-        "sha256": "f4f7f0dd8d50a853a531c426359045b1998f04219d88799810762cd4ad314234",
-        "dest": "cargo/vendor/toml-0.5.11"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"f4f7f0dd8d50a853a531c426359045b1998f04219d88799810762cd4ad314234\", \"files\": {}}",
-        "dest": "cargo/vendor/toml-0.5.11",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/toml/toml-0.7.3.crate",
         "sha256": "b403acf6f2bb0859c93c7f0d967cb4a75a7ac552100f9322faf64dc047669b21",
         "dest": "cargo/vendor/toml-0.7.3"
@@ -2823,14 +2810,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/windows/windows-0.47.0.crate",
-        "sha256": "2649ff315bee4c98757f15dac226efe3d81927adbb6e882084bb1ee3e0c330a7",
-        "dest": "cargo/vendor/windows-0.47.0"
+        "url": "https://static.crates.io/crates/windows/windows-0.48.0.crate",
+        "sha256": "e686886bc078bc1b0b600cac0147aadb815089b6e4da64016cbd754b6342700f",
+        "dest": "cargo/vendor/windows-0.48.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"2649ff315bee4c98757f15dac226efe3d81927adbb6e882084bb1ee3e0c330a7\", \"files\": {}}",
-        "dest": "cargo/vendor/windows-0.47.0",
+        "contents": "{\"package\": \"e686886bc078bc1b0b600cac0147aadb815089b6e4da64016cbd754b6342700f\", \"files\": {}}",
+        "dest": "cargo/vendor/windows-0.48.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2875,14 +2862,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/windows-targets/windows-targets-0.47.0.crate",
-        "sha256": "2f8996d3f43b4b2d44327cd71b7b0efd1284ab60e6e9d0e8b630e18555d87d3e",
-        "dest": "cargo/vendor/windows-targets-0.47.0"
+        "url": "https://static.crates.io/crates/windows-targets/windows-targets-0.48.0.crate",
+        "sha256": "7b1eb6f0cd7c80c79759c929114ef071b87354ce476d9d94271031c0497adfd5",
+        "dest": "cargo/vendor/windows-targets-0.48.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"2f8996d3f43b4b2d44327cd71b7b0efd1284ab60e6e9d0e8b630e18555d87d3e\", \"files\": {}}",
-        "dest": "cargo/vendor/windows-targets-0.47.0",
+        "contents": "{\"package\": \"7b1eb6f0cd7c80c79759c929114ef071b87354ce476d9d94271031c0497adfd5\", \"files\": {}}",
+        "dest": "cargo/vendor/windows-targets-0.48.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2901,14 +2888,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/windows_aarch64_gnullvm/windows_aarch64_gnullvm-0.47.0.crate",
-        "sha256": "831d567d53d4f3cb1db332b68e6e2b6260228eb4d99a777d8b2e8ed794027c90",
-        "dest": "cargo/vendor/windows_aarch64_gnullvm-0.47.0"
+        "url": "https://static.crates.io/crates/windows_aarch64_gnullvm/windows_aarch64_gnullvm-0.48.0.crate",
+        "sha256": "91ae572e1b79dba883e0d315474df7305d12f569b400fcf90581b06062f7e1bc",
+        "dest": "cargo/vendor/windows_aarch64_gnullvm-0.48.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"831d567d53d4f3cb1db332b68e6e2b6260228eb4d99a777d8b2e8ed794027c90\", \"files\": {}}",
-        "dest": "cargo/vendor/windows_aarch64_gnullvm-0.47.0",
+        "contents": "{\"package\": \"91ae572e1b79dba883e0d315474df7305d12f569b400fcf90581b06062f7e1bc\", \"files\": {}}",
+        "dest": "cargo/vendor/windows_aarch64_gnullvm-0.48.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2927,14 +2914,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/windows_aarch64_msvc/windows_aarch64_msvc-0.47.0.crate",
-        "sha256": "6a42d54a417c60ce4f0e31661eed628f0fa5aca73448c093ec4d45fab4c51cdf",
-        "dest": "cargo/vendor/windows_aarch64_msvc-0.47.0"
+        "url": "https://static.crates.io/crates/windows_aarch64_msvc/windows_aarch64_msvc-0.48.0.crate",
+        "sha256": "b2ef27e0d7bdfcfc7b868b317c1d32c641a6fe4629c171b8928c7b08d98d7cf3",
+        "dest": "cargo/vendor/windows_aarch64_msvc-0.48.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"6a42d54a417c60ce4f0e31661eed628f0fa5aca73448c093ec4d45fab4c51cdf\", \"files\": {}}",
-        "dest": "cargo/vendor/windows_aarch64_msvc-0.47.0",
+        "contents": "{\"package\": \"b2ef27e0d7bdfcfc7b868b317c1d32c641a6fe4629c171b8928c7b08d98d7cf3\", \"files\": {}}",
+        "dest": "cargo/vendor/windows_aarch64_msvc-0.48.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2953,14 +2940,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/windows_i686_gnu/windows_i686_gnu-0.47.0.crate",
-        "sha256": "c1925beafdbb22201a53a483db861a5644123157c1c3cee83323a2ed565d71e3",
-        "dest": "cargo/vendor/windows_i686_gnu-0.47.0"
+        "url": "https://static.crates.io/crates/windows_i686_gnu/windows_i686_gnu-0.48.0.crate",
+        "sha256": "622a1962a7db830d6fd0a69683c80a18fda201879f0f447f065a3b7467daa241",
+        "dest": "cargo/vendor/windows_i686_gnu-0.48.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"c1925beafdbb22201a53a483db861a5644123157c1c3cee83323a2ed565d71e3\", \"files\": {}}",
-        "dest": "cargo/vendor/windows_i686_gnu-0.47.0",
+        "contents": "{\"package\": \"622a1962a7db830d6fd0a69683c80a18fda201879f0f447f065a3b7467daa241\", \"files\": {}}",
+        "dest": "cargo/vendor/windows_i686_gnu-0.48.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2979,14 +2966,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/windows_i686_msvc/windows_i686_msvc-0.47.0.crate",
-        "sha256": "3a8ef8f2f1711b223947d9b69b596cf5a4e452c930fb58b6fc3fdae7d0ec6b31",
-        "dest": "cargo/vendor/windows_i686_msvc-0.47.0"
+        "url": "https://static.crates.io/crates/windows_i686_msvc/windows_i686_msvc-0.48.0.crate",
+        "sha256": "4542c6e364ce21bf45d69fdd2a8e455fa38d316158cfd43b3ac1c5b1b19f8e00",
+        "dest": "cargo/vendor/windows_i686_msvc-0.48.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"3a8ef8f2f1711b223947d9b69b596cf5a4e452c930fb58b6fc3fdae7d0ec6b31\", \"files\": {}}",
-        "dest": "cargo/vendor/windows_i686_msvc-0.47.0",
+        "contents": "{\"package\": \"4542c6e364ce21bf45d69fdd2a8e455fa38d316158cfd43b3ac1c5b1b19f8e00\", \"files\": {}}",
+        "dest": "cargo/vendor/windows_i686_msvc-0.48.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3005,14 +2992,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/windows_x86_64_gnu/windows_x86_64_gnu-0.47.0.crate",
-        "sha256": "7acaa0c2cf0d2ef99b61c308a0c3dbae430a51b7345dedec470bd8f53f5a3642",
-        "dest": "cargo/vendor/windows_x86_64_gnu-0.47.0"
+        "url": "https://static.crates.io/crates/windows_x86_64_gnu/windows_x86_64_gnu-0.48.0.crate",
+        "sha256": "ca2b8a661f7628cbd23440e50b05d705db3686f894fc9580820623656af974b1",
+        "dest": "cargo/vendor/windows_x86_64_gnu-0.48.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"7acaa0c2cf0d2ef99b61c308a0c3dbae430a51b7345dedec470bd8f53f5a3642\", \"files\": {}}",
-        "dest": "cargo/vendor/windows_x86_64_gnu-0.47.0",
+        "contents": "{\"package\": \"ca2b8a661f7628cbd23440e50b05d705db3686f894fc9580820623656af974b1\", \"files\": {}}",
+        "dest": "cargo/vendor/windows_x86_64_gnu-0.48.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3031,14 +3018,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/windows_x86_64_gnullvm/windows_x86_64_gnullvm-0.47.0.crate",
-        "sha256": "e5a0628f71be1d11e17ca4a0e9e15b3a5180f6fbf1c2d55e3ba3f850378052c1",
-        "dest": "cargo/vendor/windows_x86_64_gnullvm-0.47.0"
+        "url": "https://static.crates.io/crates/windows_x86_64_gnullvm/windows_x86_64_gnullvm-0.48.0.crate",
+        "sha256": "7896dbc1f41e08872e9d5e8f8baa8fdd2677f29468c4e156210174edc7f7b953",
+        "dest": "cargo/vendor/windows_x86_64_gnullvm-0.48.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"e5a0628f71be1d11e17ca4a0e9e15b3a5180f6fbf1c2d55e3ba3f850378052c1\", \"files\": {}}",
-        "dest": "cargo/vendor/windows_x86_64_gnullvm-0.47.0",
+        "contents": "{\"package\": \"7896dbc1f41e08872e9d5e8f8baa8fdd2677f29468c4e156210174edc7f7b953\", \"files\": {}}",
+        "dest": "cargo/vendor/windows_x86_64_gnullvm-0.48.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3057,14 +3044,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/windows_x86_64_msvc/windows_x86_64_msvc-0.47.0.crate",
-        "sha256": "9d6e62c256dc6d40b8c8707df17df8d774e60e39db723675241e7c15e910bce7",
-        "dest": "cargo/vendor/windows_x86_64_msvc-0.47.0"
+        "url": "https://static.crates.io/crates/windows_x86_64_msvc/windows_x86_64_msvc-0.48.0.crate",
+        "sha256": "1a515f5799fe4961cb532f983ce2b23082366b898e52ffbce459c86f67c8378a",
+        "dest": "cargo/vendor/windows_x86_64_msvc-0.48.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"9d6e62c256dc6d40b8c8707df17df8d774e60e39db723675241e7c15e910bce7\", \"files\": {}}",
-        "dest": "cargo/vendor/windows_x86_64_msvc-0.47.0",
+        "contents": "{\"package\": \"1a515f5799fe4961cb532f983ce2b23082366b898e52ffbce459c86f67c8378a\", \"files\": {}}",
+        "dest": "cargo/vendor/windows_x86_64_msvc-0.48.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3096,14 +3083,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/winres/winres-0.1.12.crate",
-        "sha256": "b68db261ef59e9e52806f688020631e987592bd83619edccda9c47d42cde4f6c",
-        "dest": "cargo/vendor/winres-0.1.12"
+        "url": "https://static.crates.io/crates/winresource/winresource-0.1.15.crate",
+        "sha256": "5cd38cf1ae6704c0bd03ee663068b8303b9c4bb069f83143c21ef25b19d1bc30",
+        "dest": "cargo/vendor/winresource-0.1.15"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"b68db261ef59e9e52806f688020631e987592bd83619edccda9c47d42cde4f6c\", \"files\": {}}",
-        "dest": "cargo/vendor/winres-0.1.12",
+        "contents": "{\"package\": \"5cd38cf1ae6704c0bd03ee663068b8303b9c4bb069f83143c21ef25b19d1bc30\", \"files\": {}}",
+        "dest": "cargo/vendor/winresource-0.1.15",
         "dest-filename": ".cargo-checksum.json"
     },
     {
