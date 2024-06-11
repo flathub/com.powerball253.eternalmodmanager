@@ -1,10 +1,10 @@
 {
   "id" : "com.powerball253.eternalmodmanager",
   "runtime" : "org.gnome.Platform",
-  "runtime-version" : "43",
+  "runtime-version" : "46",
   "sdk" : "org.gnome.Sdk",
   "sdk-extensions" : [
-    "org.freedesktop.Sdk.Extension.rust-nightly"
+    "org.freedesktop.Sdk.Extension.rust-stable"
   ],
   "command" : "eternal_mod_manager",
   "separate-locales" : false,
@@ -16,7 +16,7 @@
     "--device=dri"
   ],
   "build-options" : {
-    "append-path" : "/usr/lib/sdk/rust-nightly/bin",
+    "append-path" : "/usr/lib/sdk/rust-stable/bin",
         "env" : {
             "CARGO_HOME" : "/run/build/eternalmodmanager/cargo"
         }
