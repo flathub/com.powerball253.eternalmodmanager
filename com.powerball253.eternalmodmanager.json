@@ -50,9 +50,21 @@
       "sources" : [
         {
           "type" : "file",
-          "url" : "https://ppa.launchpadcontent.net/aslatter/ppa/ubuntu/pool/main/a/alacritty/alacritty_0.13.2+1-20240610T050102~jammy-64ba0b8e_amd64.deb",
-          "sha256": "2a2632133cfb3c35fb563b305cc9bec5db55504daa1eb5e3a9204f07ec9db7ab",
-          "dest-filename" : "alacritty.deb"
+          "url" : "http://launchpadlibrarian.net/726178572/alacritty_0.13.2-1ubuntu1_amd64.deb",
+          "sha256": "ff20832c7a0d6e7492ce72f8146406df562dfdae389a64251932503df3d24008",
+          "dest-filename": "alacritty.deb",
+          "only-arches": [
+            "x86_64"
+          ]
+        },
+        {
+          "type" : "file",
+          "url" : "http://launchpadlibrarian.net/726178817/alacritty_0.13.2-1ubuntu1_arm64.deb",
+          "sha256": "9c0e00344b18b617cdad1ff6a512a83e93304a5963f780e521a02f6b69298cc4",
+          "dest-filename": "alacritty.deb",
+          "only-arches": [
+            "aarch64"
+          ]
         }
       ],
       "build-commands" : [
